@@ -1,64 +1,222 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bebywhash Casino Crypto Landing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="background-animated"></div>
-  <header>
-    <img src="logo.png" alt="Bebywhash Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Características</a></li>
-        <li><a href="#">Bonos</a></li>
-        <li><a href="#">Crypto</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-    <button class="cta">Únete Ahora</button>
-  </header>
-  <main>
-    <section class="hero">
-      <h1><span class="gold-text">Bebywhash Casino Crypto</span></h1>
-      <p class="subtitle">Vive la experiencia profesional de casino en el sector crypto. Seguro, rápido y transparente.</p>
-      <a href="#" class="cta-large">Explorar Casino</a>
-    </section>
-    <section class="gallery">
-      <h2>Galería</h2>
-      <div class="gallery-images">
-        <img src="casino1.jpg" alt="Casino 1">
-        <img src="casino2.jpg" alt="Casino 2">
-        <img src="casino3.jpg" alt="Casino 3">
-      </div>
-    </section>
-    <section class="features">
-      <h2>Características</h2>
-      <div class="features-list">
-        <div class="feature-card">
-          <span class="feature-icon">⚡</span>
-          <h3>Transacciones Rápidas</h3>
-          <p>Basado en IOTA rebased, tus depósitos y retiros son instantáneos.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🔒</span>
-          <h3>Seguridad</h3>
-          <p>Tu información y fondos protegidos con tecnología blockchain.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🎲</span>
-          <h3>Bonos y Promociones</h3>
-          <p>Obtén recompensas exclusivas en cada jugada.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Bebywhash Casino Crypto. Todos los derechos reservados.</p>
-  </footer>
-</body>
-</html>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #101010;
+  color: #eee;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-animated {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle at 60% 30%, #202030 0%, #101010 90%);
+  animation: bgMove 8s infinite alternate;
+}
+
+@keyframes bgMove {
+  0%   { background-position: 60% 30%; }
+  100% { background-position: 40% 70%; }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  background: rgba(20,20,30,0.8);
+  box-shadow: 0 2px 16px #000a;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  animation: logoPulse 2s infinite alternate;
+}
+
+@keyframes logoPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0px gold);}
+  100% { transform: scale(1.08); filter: drop-shadow(0 0 12px gold);}
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffd700;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.cta {
+  background: linear-gradient(90deg,#ffd700 60%, #c9a53b 100%);
+  color: #101010;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px #0006;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: linear-gradient(90deg,#fffbe0 60%, #ffd700 100%);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 48px;
+  animation: fadeIn 1.8s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-40px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+.gold-text {
+  color: #ffd700;
+  text-shadow: 0 2px 12px #c9a53b;
+  font-size: 2.8em;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin-top: 18px;
+  font-size: 1.2em;
+  color: #eaeaea;
+}
+
+.cta-large {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 18px 40px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#ffd700 70%, #c9a53b 100%);
+  color: #141414;
+  font-weight: bold;
+  box-shadow: 0 2px 12px #0006;
+  text-decoration: none;
+  transition: background 0.2s;
+  animation: bounce 1.4s infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-10px);}
+}
+
+.gallery {
+  margin: 48px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.gallery-images img {
+  width: 220px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #000a;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: imgFloat 3s infinite alternate;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 16px 42px #ffd70080;
+}
+
+@keyframes imgFloat {
+  from { transform: translateY(0);}
+  to   { transform: translateY(-14px);}
+}
+
+.features {
+  background: rgba(20, 20, 30, 0.7);
+  padding: 48px 0 24px 0;
+  margin: 32px 0;
+  box-shadow: 0 4px 32px #000a;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #181830;
+  border-radius: 14px;
+  padding: 24px 18px;
+  max-width: 280px;
+  box-shadow: 0 2px 12px #ffd70050;
+  text-align: center;
+  transition: transform 0.2s;
+  animation: fadeInCard 1.4s;
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.7);}
+  to   { opacity: 1; transform: scale(1);}
+}
+
+.feature-icon {
+  font-size: 2.2em;
+  color: #ffd700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 0 18px 0;
+  background: #181830;
+  color: #ffd700;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  header, .features-list, .gallery-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  header {
+    padding: 18px 12px;
+  }
+  .hero {
+    margin-top: 24px;
+  }
+  .gallery-images img {
+    width: 90vw;
+    height: 260px;
+  }
+}
