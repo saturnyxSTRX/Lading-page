@@ -1,148 +1,64 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bebywhash | Casino of the Rebased Future</title>
+  <title>Bebywhash Casino Crypto Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="bw-logo.png">
 </head>
 <body>
-  <!-- Fixed Header -->
-  <header class="header">
-    <div class="logo animated-entry">
-      <!-- BW Logo as SVG or <img src="bw-logo.png"> -->
-      <svg width="40" height="40" viewBox="0 0 40 40"><text x="3" y="30" font-family="serif" font-size="32" fill="#FFD700">BW</text></svg>
-    </div>
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#games">Games</a>
-      <a href="#token">Token $BB</a>
-      <a href="#staking">Staking</a>
-      <a href="#howitworks">How It Works</a>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Welcome Section -->
-    <section id="home" class="welcome">
-      <h1 class="title">Bebywhash: <span class="highlight">Casino of the Rebased Future</span></h1>
-      <p class="subtitle">Play, earn, and stake with <span class="token">$BB</span> on <span class="iota">IOTA Rebased</span></p>
-      <div class="buttons">
-        <button class="primary">Connect Wallet</button>
-        <button class="secondary">Play Now</button>
-      </div>
-    </section>
-
-    <!-- Games Section -->
-    <section id="games" class="games">
-      <h2>Featured Games</h2>
-      <div class="game-cards">
-        <div class="game-card">
-          <!-- SVG icon example -->
-          <div class="game-icon roulette"></div>
-          <h3>Roulette</h3>
-          <p>Spin to win big in the classic casino favorite.</p>
-          <button class="play">Play</button>
-        </div>
-        <div class="game-card">
-          <div class="game-icon dice"></div>
-          <h3>Dice</h3>
-          <p>Test your luck with high-speed dice games.</p>
-          <button class="play">Play</button>
-        </div>
-        <div class="game-card">
-          <div class="game-icon blackjack"></div>
-          <h3>Blackjack</h3>
-          <p>Beat the dealer and claim your rewards.</p>
-          <button class="play">Play</button>
-        </div>
-        <div class="game-card">
-          <div class="game-icon slots"></div>
-          <h3>Slots</h3>
-          <p>Neon reels, legendary jackpots.</p>
-          <button class="play">Play</button>
-        </div>
-        <div class="game-card">
-          <div class="game-icon crash"></div>
-          <h3>Crash</h3>
-          <p>Ride the multiplier and cash out before it crashes.</p>
-          <button class="play">Play</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Token $BB Section -->
-    <section id="token" class="token-section">
-      <h2>Token $BB</h2>
-      <p>
-        <strong>$BB</strong> powers Bebywhash with rebased mechanics, staking opportunities, and lucrative rewards.
-      </p>
+  <div class="background-animated"></div>
+  <header>
+    <img src="logo.png" alt="Bebywhash Logo" class="logo">
+    <nav>
       <ul>
-        <li>Automatic rebasing for increased value</li>
-        <li>Stake to earn APY and bonus rewards</li>
-        <li>Utility across games and staking arena</li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Características</a></li>
+        <li><a href="#">Bonos</a></li>
+        <li><a href="#">Crypto</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
-      <button class="primary">Stake Your $BB</button>
+    </nav>
+    <button class="cta">Únete Ahora</button>
+  </header>
+  <main>
+    <section class="hero">
+      <h1><span class="gold-text">Bebywhash Casino Crypto</span></h1>
+      <p class="subtitle">Vive la experiencia profesional de casino en el sector crypto. Seguro, rápido y transparente.</p>
+      <a href="#" class="cta-large">Explorar Casino</a>
     </section>
-
-    <!-- How It Works Section -->
-    <section id="howitworks" class="how-it-works">
-      <h2>How It Works</h2>
-      <ol>
-        <li>Connect your wallet (Nightly Wallet, IOTA Wallet supported)</li>
-        <li>Play games and earn $BB rewards</li>
-        <li>Stake your $BB for dynamic APY</li>
-      </ol>
-      <div class="wallet-icons">
-        <div class="wallet-icon nightly"></div>
-        <div class="wallet-icon iota"></div>
+    <section class="gallery">
+      <h2>Galería</h2>
+      <div class="gallery-images">
+        <img src="casino1.jpg" alt="Casino 1">
+        <img src="casino2.jpg" alt="Casino 2">
+        <img src="casino3.jpg" alt="Casino 3">
       </div>
     </section>
-
-    <!-- Staking Arena Section -->
-    <section id="staking" class="staking-arena">
-      <h2>Staking Arena</h2>
-      <div class="apy-box">
-        <span>Dynamic APY:</span>
-        <span class="apy-value">23.4%</span>
+    <section class="features">
+      <h2>Características</h2>
+      <div class="features-list">
+        <div class="feature-card">
+          <span class="feature-icon">⚡</span>
+          <h3>Transacciones Rápidas</h3>
+          <p>Basado en IOTA rebased, tus depósitos y retiros son instantáneos.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔒</span>
+          <h3>Seguridad</h3>
+          <p>Tu información y fondos protegidos con tecnología blockchain.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎲</span>
+          <h3>Bonos y Promociones</h3>
+          <p>Obtén recompensas exclusivas en cada jugada.</p>
+        </div>
       </div>
-      <table class="rewards-table">
-        <thead>
-          <tr>
-            <th>Period</th>
-            <th>Reward</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>7 Days</td>
-            <td>3.5% $BB</td>
-            <td>Active</td>
-          </tr>
-          <tr>
-            <td>30 Days</td>
-            <td>15% $BB</td>
-            <td>Active</td>
-          </tr>
-        </tbody>
-      </table>
-      <button class="primary">Stake Now</button>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="legal-links">
-      <a href="#">Legal</a>
-      <a href="#">Docs</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="branding">
-      &copy; 2025 Bebywhash &ndash; Powered by IOTA Rebased
-    </div>
+  <footer>
+    <p>&copy; 2025 Bebywhash Casino Crypto. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
